@@ -22,6 +22,7 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -34,19 +35,13 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		font-family: 'Passion One', cursive;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		background: #222222;
 		background-size: 224px;
 	}
 	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+		font-family: 'Passion One', cursive;
+		font-family: 'Plus Jakarta Sans', sans-serif;
 	}
 </style>

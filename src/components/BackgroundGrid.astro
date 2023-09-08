@@ -1,0 +1,28 @@
+<div class="bg-grid relative">
+  <div class="grid-container">
+  </div>
+</div>
+
+<style>
+  .bg-grid {
+    background-size: 100px 100px;
+    z-index: -2;
+    background-image: url(/assets/bg-grid.png);
+    background-position-y: -9px;
+    -webkit-mask-image: linear-gradient(to bottom,transparent,10%,white,90%,transparent);
+    mask-image: linear-gradient(to bottom,transparent,10%,white,90%,transparent)
+	}
+	.grid-container {
+    display: grid;
+    grid-template-columns: 1fr min(var(--container-width, 1280px),calc(100% - (2 * var(--container-gutter-size, 24px)))) 1fr;
+    grid-column-gap: var(--container-gutter-size, 24px);
+    overflow: clip;
+    width: 100%;
+    row-gap: 6rem;
+    padding-bottom: 6rem;
+	}
+	.grid-container {
+    row-gap: 10rem;
+    padding-bottom: 10rem;
+	}
+</style>
