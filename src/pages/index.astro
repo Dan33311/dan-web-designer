@@ -1,15 +1,126 @@
 ---
-import BackgroundGrid from '../components/BackgroundGrid.astro';
+// import BackgroundGrid from '../components/BackgroundGrid.astro';
 import Layout from '../layouts/Layout.astro';
+import Svgs from '../components/Svgs.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<BackgroundGrid />
+		<section class="hero">
+			<div class="img-ln">
+				<div class="img-g">
+					<img class="emoji" src="../../public/assets/dan-designer-emoji-1.png" alt="">
+					<img class="img-name" src="../../public/assets/daniel.png" alt="">
+				</div>
+				<img src="../../public/assets/sandoval.png" alt="">
+			</div>
+			<div class="hero-icons">
+				<svg class="hero-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:#CECECE;}
+						.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#CECECE;}
+					</style>
+					<g id="Capa_2">
+						<path class="st0" d="M620.3,103.7L201,94.2C119.7,94.2,0,763,0,681.7V70C0,31.3,31.3,0,70,0h660c38.7,0,70,31.3,70,70v660
+							C800,768.7,659,103.7,620.3,103.7z"/>
+						<path class="st0" d="M68.9,423.6L91,556.9c-8.7,28.5,195,82.6,195,163.9l205.3,0.7c0,38.7,18.1,78.5-20.6,78.5H70.3
+							c-38.7,0-70-31.3-70-70V70C0.3,31.3,30.2,423.6,68.9,423.6z"/>
+						<path class="st0" d="M731.4,423.6l-22.1,133.3c8.7,28.5-198.1,82.6-198.1,163.9l-202.3,0.7c0,38.7-18.1,78.5,20.6,78.5H730
+							c38.7,0,70-31.3,70-70V70C800,31.3,770,423.6,731.4,423.6z"/>
+					</g>
+					<g id="Page-1">
+						<g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)">
+							<g id="icons" transform="translate(56.000000, 160.000000)">
+								<path id="github-_x5B__x23_142_x5D_" class="st1" d="M484,7359.6c209.9,0,380.1,174.5,380.1,389.7
+									c0,172.2-108.8,318.2-259.7,369.8c-19.3,3.8-26.1-8.3-26.1-18.7c0-12.8,0.5-54.8,0.5-107c0-36.3-12.2-60-25.8-72.1
+									c84.7-9.7,173.6-42.6,173.6-192.3c0-42.6-14.7-77.3-39.2-104.6c4-9.8,17-49.5-3.7-103.2c0,0-31.9-10.4-104.4,40
+									c-30.4-8.6-62.9-13-95.2-13.1c-32.3,0.1-64.8,4.5-95.1,13.1c-72.6-50.4-104.6-40-104.6-40c-20.6,53.7-7.6,93.3-3.7,103.2
+									c-24.3,27.3-39.2,62-39.2,104.6c0,149.3,88.8,182.8,173.2,192.6c-10.9,9.7-20.7,26.9-24.1,52.1c-21.7,10-76.7,27.2-110.6-32.4
+									c0,0-20.1-37.5-58.3-40.2c0,0-37.1-0.5-2.6,23.7c0,0,24.9,12,42.2,57c0,0,22.3,69.6,128.1,46c0.2,32.6,0.5,63.3,0.5,72.6
+									c0,10.3-7,22.4-26,18.7c-151.1-51.5-260-197.6-260-369.8C103.9,7534,274.1,7359.6,484,7359.6"/>
+							</g>
+						</g>
+					</g>
+				</svg>
+				<svg class="hero-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<path fill="#CECECE" d="M17.0391667,17.0433333 L14.0775,17.0433333 L14.0775,12.4025 C14.0775,11.2958333 14.055,9.87166667 12.5341667,9.87166667 C10.99,9.87166667 10.7541667,11.0758333 10.7541667,12.3208333 L10.7541667,17.0433333 L7.7925,17.0433333 L7.7925,7.5 L10.6375,7.5 L10.6375,8.80083333 L10.6758333,8.80083333 C11.0733333,8.05083333 12.04,7.25916667 13.4841667,7.25916667 C16.485,7.25916667 17.04,9.23416667 17.04,11.805 L17.04,17.0433333 L17.0391667,17.0433333 Z M4.4475,6.19416667 C3.49416667,6.19416667 2.72833333,5.4225 2.72833333,4.47333333 C2.72833333,3.525 3.495,2.75416667 4.4475,2.75416667 C5.3975,2.75416667 6.1675,3.525 6.1675,4.47333333 C6.1675,5.4225 5.39666667,6.19416667 4.4475,6.19416667 Z M5.9325,17.0433333 L2.9625,17.0433333 L2.9625,7.5 L5.9325,7.5 L5.9325,17.0433333 Z M18.5208333,0 L1.47583333,0 C0.66,0 0,0.645 0,1.44083333 L0,18.5591667 C0,19.3558333 0.66,20 1.47583333,20 L18.5183333,20 C19.3333333,20 20,19.3558333 20,18.5591667 L20,1.44083333 C20,0.645 19.3333333,0 18.5183333,0 L18.5208333,0 Z">
+						</path> 
+					</g>
+				</svg>
+				<svg class="hero-icon" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2.15 -2.15 25.81 25.81" xml:space="preserve" fill="" stroke="">
+					<g id="SVGRepo_bgCarrier" stroke-width="0">
+						<rect x="-2.15" y="-2.15" width="25.81" height="25.81" rx="2.3228999999999997" fill="#CECECE"></rect>
+					</g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier"> 
+						<g> <path style="fill:#F48408;" d="M0,2.963v15.584h21.51V2.963H0z M15.722,3.511l-4.969,4.966L5.206,3.511H15.722z M2.912,5.993 l5.992,5.19l-5.992,4.589C2.912,15.772,2.912,5.993,2.912,5.993z M18.597,18.033H2.912v-1.41l6.403-4.926l1.438,1.438l1.507-1.438 l6.337,4.926V18.033z M18.597,15.772l-5.822-4.725l5.822-5.755V15.772z"></path> 
+						</g> 
+					</g>
+				</svg>
+				<svg class="hero-icon" width="187px" height="187px" viewBox="-3 -3 26.00 26.00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0">
+						<rect x="-3" y="-3" width="26.00" height="26.00" rx="2.34" fill="#CECECE"></rect>
+					</g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier"> 
+						<title>whatsapp [#F48408]</title> 
+						<desc>Created with Sketch.</desc> 
+						<defs> </defs> 
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+							<g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7599.000000)" fill="#F48408"> 
+								<g id="icons" transform="translate(56.000000, 160.000000)"> 
+									<path d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439" id="whatsapp-[#F48408]"> 
+									</path> 
+								</g> 
+							</g> 
+						</g> 
+					</g>
+				</svg>
+				
+			</div>
+			
+		</section>
+		<Svgs />
+		
+		<!-- <BackgroundGrid /> -->
 	</main>
 </Layout>
 
 <style>
-	
+	.img-ln {
+		width: fit-content;
+		outline: 1px solid lime;
+	}
+	.img-g {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+	.emoji {
+		margin-right: -26px;
+		margin-bottom: -6px;
+		z-index: 1;
+	}
+	.img-name {
+		margin-right: 0px;
+		padding-bottom: 14px;
+	}
+	.hero {
+		width: 100%;
+		height: 100vh;
+		background-color: var(--orange);
+	}
+	.hero-icons {
+		display: flex;
+		display: none;
+		gap: 6px;
+	}
+	.hero-icon {
+		width: 40px;
+		height: 40px;
+	}
 	
 </style>
