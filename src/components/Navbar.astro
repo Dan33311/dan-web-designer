@@ -1,6 +1,8 @@
 <section>
   <div class="navbar-container">
     <div class="logo-container">
+      <div class="poly"></div>
+      <div class="line"></div>
       <img class="logo" src="../../src/assets/DAN-logo.png" alt="" >
       <h4>DANIEL<br>SANDOVAL</h4>
     </div>
@@ -28,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid var(--light-white);
+    border: 1px solid var(--icon-ob);
     border-radius:9px;
     box-shadow: 0px 4px 4px 0px #00000040;
     margin-top: 33px;
@@ -41,11 +43,36 @@
     background: var(--light-white);
     border-radius: 9px 0 0 9px;
   }
+  .poly {
+		width: 120px;
+		height: 90px;
+		background: var(--icon-ob);
+    border-radius: 9px 0 0 9px;
+		clip-path: polygon(40% 0%, 0% 0%, 0% 100%, 100% 100%);
+    z-index: 11;
+	}
+  /* .line {
+    width: 114px;
+    height: 3px;
+    background: var(--orange);
+    transform: rotate(51deg);
+    margin-left: -94px;
+    z-index: 22;
+  } */
+  .line {
+    width: 130px;
+    height: 88px;
+    background: var(--orange);
+    clip-path: polygon(0% 0%, 3% 0%, 58% 100%, 55% 100%);
+    z-index: 22;
+    margin-left: -74px;
+  }
   .logo {
     width: 77px;
     height: 41px;
-    margin-left: 56px;
+    margin-left: -128px;
     padding: 6px 10px;
+    z-index: 22;
     background: var(--orange);
     border-radius: 4px;
   }
@@ -55,6 +82,7 @@
     font-size: 18px;
     color: var(--orange);
     letter-spacing: 9px;
+    z-index: 22;
   }
   .links {
   }
